@@ -51,25 +51,53 @@ body {
 	font-size: 50%;
 }
 
-.chatMessage {
+.chatMessage__form {
 	display: flex;
 	align-items: center;
 }
 
 .chatMessage__input,
-.chatMessage__button {
+.chatMessage__button, 
+.chatMessage__username, 
+.username__button {
 	font-family: inherit;
 	font-size: inherit;
 	padding: .3em .7em;
 }
 
-.chatMessage__input {
+.chatMessage__input .chatMessage__username {
 	flex: 4;
 }
 
-.chatMessage__button {
+.chatMessage__button .username__button{
 	flex: 1;
 	background-color: hsl(120, 50%, 30%);
 	color: hsl(0, 0%, 96%);
 	border: none;
+}
+
+.emoticon{
+	width: 90px;
+}
+
+.timestamp{
+	color: lightblue;
+	font-size: .9em;
+	display: block;
+}
+
+.timestamp.left{
+	text-align: left;
+}
+
+.timestamp.right{
+	text-align: right;
+}
+
+.hidden{
+	display: none;
+	visibility: hidden;
+	width: 1px;
+	height: 1px;
+	pointer-events: none;
 }
