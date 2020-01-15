@@ -27,11 +27,9 @@ const FILES_TO_CACHE = [
   '/index.html',
   '/assets/js/install.js',
   '/assets/css/style.css',
-  '/assets/images/catter.svg',
-  '/assets/images/catter.png',
-  '/assets/images/smile.png',
   '/assets/images/install.svg',
-  '/assets/media/sound.mp3'
+  '/assets/media/sound.mp3',
+  '/assets/media/giif.gif'
 ];
 
 self.addEventListener('install', (evt) => {
