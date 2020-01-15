@@ -12,11 +12,11 @@ server.listen(process.env.PORT || 3000, handlerServer);
 function handleSocketConnection(socket) {
 	console.log("A user connected");
 	socket.on("disconnect", handleSocketDisconnect);
-	socket.on("message", function handleChatMessage(msg){
+	socket.on("message", function handleChatMessage(msg) {
 		socket.broadcast.emit("message", msg);
-	})
-	socket.on("userjoin", function handleUserJoin(msg){
-		socket.broadcast.emit("userjoin", msg)
+	});
+	socket.on("userjoin", function handleUserJoin(msg) {
+		socket.broadcast.emit("userjoin", msg);
 	});
 }
 
